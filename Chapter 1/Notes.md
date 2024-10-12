@@ -98,3 +98,28 @@ int main(void)
 }
 
 ```
+## 1.5 Character Input and Output
+* Text stream: Sequence of characters divided into lines.
+* ```getchar()```: Reads input for a character.
+* ```putchar()```: Outputs one character.
+
+### 1.5.1 File Copying
+```
+#include <stdio.h>
+
+int main(void)
+{
+    int c;
+
+    c = getchar();
+    while (c != EOF)
+    {
+        putchar(c);
+	c = getchar();
+    }
+}
+```
+* ```!=```: Not equal.
+* ```==```: Equal.
+* ```||```: A or B.
+* ```&&```: A and B.
