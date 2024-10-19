@@ -102,7 +102,6 @@ int main(void)
 * Text stream: Sequence of characters divided into lines.
 * ```getchar()```: Reads input for a character.
 * ```putchar()```: Outputs one character.
-
 ### 1.5.1 File Copying
 ```
 #include <stdio.h>
@@ -123,3 +122,73 @@ int main(void)
 * ```==```: Equal.
 * ```||```: A or B.
 * ```&&```: A and B.
+* Characters like "A", are just stored as bit patterns.
+* ```int``` is used instead of ```char``` because the latter can't hold the value of ```EOF```.
+* ```EOF``` is defined inside the standar input/output library.
+* Assignments (=) can be part of bigger expression.
+```
+#include <stdio.h>
+
+int main(void)
+{
+    int c;
+
+    while ((c = getchar()) != EOF) /* The assignment is inside of the while */
+    {
+        putchar(c);
+    }
+}
+```
+* ```!=``` has higher precendence than ```=```.
+### 1.5.2 Character Counting
+```
+#include <stdio.h>
+
+int main(void)
+{
+    long nc;
+
+    nc = 0;
+    while (getchar() != EOF)
+    {
+        ++nc;
+    }
+    printf("%ld\n", nc);
+}
+```
+* ```++```: increase by one.
+* ```--```: decrease by one.
+* These can be suffix ```nc++``` or prefix ```++nc```, these differences are explained in Chapter 2.
+```
+#include <stdio.h>
+
+int main(void)
+{
+    double nc;
+
+    for (nc = 0; getchar() != EOF; ++nc)
+        ;
+    printf("%.0f\n", nc);
+}
+* The lonely semicolon inside the for is called a null statement.
+### 1.5.3 Line Counting
+```
+#include <stdio.h>
+
+int main(void)
+{
+    int c, nl;
+
+    nl = 0;
+    while ((c = getchar()) != EOF)
+    {
+        if (c == '\n')
+	{
+	    ++nl;
+	}
+    }
+    printf("%d\n", nl);
+}
+```
+* The ```if``` checks if c is equal to a newline signal. Remember that in the following programs there are always more newlines than any other characters.
+* A character written between single quotes represents a integer value.
