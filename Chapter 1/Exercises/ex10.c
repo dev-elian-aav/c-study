@@ -1,7 +1,3 @@
-/*
-1. Copy input to output
-2. Replace the following: \b, \t and \\.
-*/
 #include <stdio.h>
 
 int main(void)

@@ -192,3 +192,37 @@ int main(void)
 ```
 * The ```if``` checks if c is equal to a newline signal. Remember that in the following programs there are always more newlines than any other characters.
 * A character written between single quotes represents a integer value.
+### 1.5.4 Word Counting
+```
+#include <stdio.h>
+#define IN 1
+#define OUT 0
+
+int main(void)
+{
+    int c, nl, nw, nc, state;
+
+    state = OUT;
+    nl = nw = nc = 0;   
+    while ((c = getchar()) != EOF)
+   {
+       ++nc;
+       if (c == '\n')
+       {
+           ++nl;
+       }
+       if (c == ' ' || c == '\n' || c == '\t')
+       {
+           state = OUT;
+       }
+       else if (state == OUT)
+       {
+           state = IN;
+           ++nw;
+       }
+   }
+   printf("%d %d %d\n", nl, nw, nc);
+}
+```
+* Maybe if I use the state variable, I can achieve the results I want.
+* The evaluation of the || operator will stop when one of it's conditions it's true.
