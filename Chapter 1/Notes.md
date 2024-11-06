@@ -226,3 +226,43 @@ int main(void)
 ```
 * Maybe if I use the state variable, I can achieve the results I want.
 * The evaluation of the || operator will stop when one of it's conditions it's true.
+### 1.6 Arrays
+```
+#include <stdio.h>
+
+int main(void)
+{
+	int c, i, nwhite, nother;
+	int ndigit[10];
+
+	nwhite = nother = 0;
+	for (i = 0; i < 10; ++i)
+	{
+		ndigit[i] = 0;
+	}
+
+	while ((c = getchar()) != EOF)
+	{
+		if (c >='0' && c <= '9')
+		{
+			++ndigit[c-0];
+		}
+		else if (c == ' ' || c == '\n' || c == '\t')
+		{
+			++nwhite;
+		}
+		else
+		{
+			++nother;
+		}
+	}
+	
+	printf("digits =");
+	for (i = 0; i < 10; ++i)
+	{
+		printf(" %d", ndigit[i]);
+	}
+	printf(", white space = %d, other = %d\n", nwhite, nother);
+}
+```
+* The ```for``` loop initializes all the array values at 0.
