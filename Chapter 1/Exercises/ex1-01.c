@@ -13,5 +13,5 @@ int main(void) /* Define an integer function that expects no arguments */
 
 	/* rintf("Hello, World\n"); */
 	/* Leave out the p of printf, miscalling the function. Note: include ‘<math.h>’ or provide a declaration of ‘rintf’ */
-	return 0;
+	return 0; /* Tell the main function to return 0 (No errors) */
 }

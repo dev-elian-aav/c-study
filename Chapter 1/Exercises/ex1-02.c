@@ -54,4 +54,5 @@ int main(void) /* Define an integer function that expects no arguments*/
 	/* The escape sequence \y is unknown */
 	printf("Hello, World\z");
 	/* The escape sequence \z is unknown */
+	return 0; /* Tell the main function to return 0 (No errors) */
 }
