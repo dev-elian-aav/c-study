@@ -2,6 +2,7 @@
 ## 1.1 Getting Started
 
 [QUESTIONS]
+
 1. How related are C and C++?
 2. How the C compiler, written in C, was compiled in the first place?
 3. Why the introduction separates OSes from "major programs"?
@@ -12,9 +13,11 @@
 8. What is the precedence of operators?
 
 [ANSWERS]
+
 6. *"The choice between while and for is arbitrary, based on which seems clearer"* - Kernighan and Ritchie
 
 [NOTES]
+
 * C is a typed programming language.
 * C is a low level language.
 * C programs are comprised of functions and variables.
