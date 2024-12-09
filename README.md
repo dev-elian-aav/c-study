@@ -2,7 +2,7 @@
 
 ## What is this repository about?
 
-This repository stores my notes and responses to the exercises presented in C programming books.
+This repository stores my notes and responses to the exercises presented various in C programming books.
 The following is a list of books I'am doing/plan to do:
 
 * The C Programming Language - Kernighan & Ritchie [CURRENTLY DOING]
