@@ -3,6 +3,7 @@
 int main(void)
 {
 	int c, nc, nl, nb, nt;
+
 	for (nc = nl = nt = nb = 0; (c = getchar()) != EOF; ++nc)
 	{
 		if (c == '\n')

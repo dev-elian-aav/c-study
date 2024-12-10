@@ -12,16 +12,14 @@ int main(void)
 		if (c == ' ' && pchar == ' ')
 		{
 			pchar = c;
-
 		}
 		else
 		{
 			putchar(c);
-
 			pchar = c;
-
 		}
 	}
+
 	return 0;
 
 }

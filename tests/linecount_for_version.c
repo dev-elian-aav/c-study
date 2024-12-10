@@ -8,6 +8,7 @@ int main(void)
 	{
 		;
 	}
+
 	printf("There were %d lines\n", nl);
 	return 0;
 }

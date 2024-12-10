@@ -13,6 +13,7 @@ int main(void)
 	{
 		printf("Testing posible escape sequences %c", escapeSequence[i]);
 	}
+
 	printf("Tested!\n");
 	return 0;
 }

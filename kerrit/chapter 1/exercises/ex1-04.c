@@ -12,11 +12,13 @@ int main(void)
 	upper = 300;
 
 	printf("%4s%6s\n", c, f);
+
 	while (celsius <= upper)
 	{
 		fahr = (celsius * 9.0/5.0) + 32;
 		printf("%3.0f%6.1f\n", celsius, fahr);
 		celsius += step;
 	}
+	
 	return 0;
 }
