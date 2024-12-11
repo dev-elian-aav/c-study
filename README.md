@@ -7,6 +7,7 @@ in various C programming books.
 The following is a list of books I'am doing/plan to do:
 
 * The C Programming Language - Kernighan & Ritchie [CURRENTLY DOING]
+* The C Puzzle Book - Feuer [CURRENTLY DOING]
 * C Programming: A Modern Approach - K. N. King [PLANNED]
 * Modern C - Jens Gustedt [PLANNED]
 
