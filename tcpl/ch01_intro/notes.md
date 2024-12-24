@@ -43,3 +43,5 @@ and are a pain to change if used repeatedly in a program.
 * Assignments can be part of larger expressions.
 * ´´´for´´´ loops can be empty if the work is done in the test and step parts.
 * Condition evaluation stops as soon as it's truth or falsehood is known.
+* *"The output of this program on itself is..."* **always** make sure to read **everything**.
+* Conditions are evaluated in **order**.
